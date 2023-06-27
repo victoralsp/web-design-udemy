@@ -6,4 +6,62 @@ body {
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../imagens/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom right;
+}
+
+#main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-title {
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+    margin: 20px 0;
+}
+
+.main-paragraph {
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    color: white;
+    padding: 14px 0px;
+    border-bottom: 2px solid white;
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.main-cards {
+    display: flex;
+    width: 800px;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.main-cards-flex {
+    flex-basis: 250px;
+    flex-grow: 1;
+}
+
+.main-cards-img {
+    width: 100%;
+    display: block;
+}
+
+.main-cards-p {
+    background-color: rgb(46, 46, 46);
+    color: white;
+    padding: 8px;
+    margin: 0;
 }
