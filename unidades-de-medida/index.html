@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc()</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+
+        #width {
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            gap: 10px;
+            width: 1000px;
+            height: 100vh;
+            background-color: rgb(230, 230, 230);
+        }
+
+        #container {
+            width: 250px;
+            height: 180px;
+            background-color: rgb(188, 160, 255);
+            margin-top: 200px;
+            border-radius: 50px 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 10px;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.205), rgba(0, 0, 0, 0.37)), url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm222-mind-16_1.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=1c53e59a7b21c1ffee85bc36a3837392');
+            background-size: 120%;
+            background-position: center;
+        }
+
+        #container:hover {
+            width: 300px;
+        }
+
+        .container1 {
+            align-self: center;
+        }
+        .container3 {
+            align-self: flex-end;
+        }
+        .nome {
+            display: flex;
+            align-items: center;
+            line-height: 2px;
+
+        }
+
+        .img {
+            width: 35px;
+            height: 35px;
+            background-color: rgb(255, 255, 255);
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .aaa {
+            text-align: center;
+            color: white;
+        }
+
+        .nome {
+            margin: 0 auto;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="width">
+        <div id="container" class="container2">
+            <div class="aaa"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, possimus!</p></div>
+            <div class="nome">
+                <div class="img"></div>
+                <div class="infos">
+                    <p>José Alberto</p>
+                    <p>CEO da Nasa</p>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="container1">
+            <div class="aaa"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, possimus!</p></div>
+            <div class="nome">
+                <div class="img"></div>
+                <div class="infos">
+                    <p>José Alberto</p>
+                    <p>CEO da Nasa</p>
+                </div>
+            </div>
+        </div>
+        <div id="container" class="container3">
+            <div class="aaa"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, possimus!</p></div>
+            <div class="nome">
+                <div class="img"></div>
+                <div class="infos">
+                    <p>José Alberto</p>
+                    <p>CEO da Nasa</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
