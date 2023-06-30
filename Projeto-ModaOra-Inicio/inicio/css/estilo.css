@@ -1,1 +1,153 @@
-/* Escreva aqui as suas folhas de estilo */
+/* 
+Background Top Header: #162028
+
+Cor do texto no menu: #425564
+
+Cor dos textos: #555
+
+Cor de fundo do box com imagem de detalhe: #003d52
+
+Cor de fundo do footer: #0b171f
+
+Cor de texto do footer: #6f8597
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root {
+    --fonte-titulo: 'Italiana';
+    --fonte-padrao: 'Roboto';
+    --bg-header-color: #162028;
+    --text-menu-color: #425564;
+    --text-color: #555;
+    --color-box-img: #003d52;
+    --bg-color-footer: #0b171f;
+    --text-color-footer: #6f8597;
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#content {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-header-color);
+    padding: 5px;
+}
+
+.header-nav__title {
+    color: #fff;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    margin-left: 150px;
+}
+
+.header-navbar ul {
+    display: flex;
+    list-style: none;
+    font-family: var(--fonte-padrao);
+    text-transform: uppercase;
+}
+
+.header-navbar a {
+    color: var(--text-menu-color);
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: .9em;
+    letter-spacing: 3px;
+}
+
+.main-article {
+    text-align: center;
+}
+
+.main-article__subtitle {
+    font-family: var(--fonte-titulo);
+    margin: 100px 0 50px;
+    font-size: 2em;
+}
+
+.main-article__paragraph {
+    font-family: var(--fonte-padrao);
+    color: var(--text-color);
+    width: 800px;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+#main-section-models {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+#main-section-models img {
+    width: 220px;
+    margin-bottom: 12px;
+}
+
+.section-models__aside {
+    text-align: center;
+    font-family: var(--fonte-padrao);
+    color: var(--text-color);
+    font-size: .9em;
+}
+
+.name {
+    text-transform: uppercase;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-bottom: 7px;
+}
+
+#main-section-details {
+    background-image: linear-gradient(#1e364ba4, #203c53a2), url(../imagens/bg_detalhe.png);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 120px 150px;
+    margin-top: 70px;
+    color: #fff;
+}
+
+
+.section-details__subtitle {
+    font-family: var(--fonte-titulo);
+    font-size: 2.3em;
+    font-weight: light;
+    letter-spacing: 2px;
+}
+
+.section-details_paragraph {
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
+    margin-top: 40px;
+    width: 65%;
+    line-height: 20px;
+}
+
+#footer {
+    text-align: center;
+    background-color: var(--bg-color-footer);
+    color: var(--text-color-footer);
+}
+
+.footer__paragraph {
+    letter-spacing: 3px;
+    padding: 16px;
+    font-family: var(--fonte-padrao);
+    font-size: .9em;
+}
