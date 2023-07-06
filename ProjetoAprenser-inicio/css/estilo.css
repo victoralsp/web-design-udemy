@@ -4,6 +4,7 @@
 
 html {
     font: 400 62.5% 'Inter', sans-serif;
+    scroll-behavior: smooth;
 }
 
 p, a {
@@ -37,6 +38,7 @@ nav a {
     text-decoration: none;
     padding: 1.3rem 4.3rem;
     display: inline-block;
+    color: inherit;
 }
 
 .wrapperContainer {
@@ -57,9 +59,30 @@ nav a {
     color: #fafafa;
 }
 
+.wrapperContainer-fixed {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapperContainer-padded {
+    padding-top: 7rem;
+}
+
 .container {
     max-width: 120rem;
     margin: auto;
+}
+
+.section_title {
+    padding: 3.5rem 0;
+    text-align: center;
+}
+
+.section_btn {
+    margin: 5rem 0;
 }
 
 .header {
@@ -97,21 +120,41 @@ nav a {
     gap: 14rem;
 }
 
+.header_content {
+    margin-left: 5rem;
+}
+
 .hero_title {
     margin-bottom: 3rem;
 }
 
+.heroBanner img {
+    width: 50%;
+}
+
 .cursos {
-    text-align: left;
+    text-align: center;
 }
 
 .cursosContainer {
     display: flex;
+    text-align: left;
+    gap: 2rem;
 }
 
 .curso_card {
-    border: 1px solid #ccc;
     flex: 1;
+    transition-duration: .8s;
+    transition-timing-function: ease;
+}
+
+.curso_card:hover {
+    transform: translateY(-10px);
+}
+
+.curso_card img {
+    display: block;
+    width: 100%;
 }
 
 .curso_card p {
@@ -120,5 +163,49 @@ nav a {
 }
 
 .cursos_card_content {
-    padding: 1rem;
+    padding: 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0 0 8px 8px;
+    border-top: transparent;
+}
+
+.escola {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    padding-top: 6rem;
+}
+
+.escola_title {
+    font-size: 2.8rem;
+}
+
+.escola p {
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+.escola img {
+    width: 45%;
+}
+
+.contatos_address {
+    text-align: right;
+    font: 400 1.8rem 'Inter', sans-serif;
+    padding: 3rem 0;
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+}
+
+.footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
