@@ -39,6 +39,12 @@ nav a {
     padding: 1.3rem 4.3rem;
     display: inline-block;
     color: inherit;
+    transition: ease .8s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: var(--primary-color);
 }
 
 .wrapperContainer {
@@ -97,6 +103,7 @@ nav a {
     padding: .75em 1.15em;
     border: solid 1px;
     text-decoration: none;
+    transition: ease .8s;
 }
 
 .header_nav a:hover {
@@ -118,6 +125,7 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 14rem;
+    transition: all 1.5s;
 }
 
 .header_content {
@@ -134,6 +142,7 @@ nav a {
 
 .cursos {
     text-align: center;
+    transition: all 1.5s;
 }
 
 .cursosContainer {
@@ -209,3 +218,4 @@ nav a {
 .footer a:hover {
     text-decoration: underline;
 }
+

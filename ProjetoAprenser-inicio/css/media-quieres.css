@@ -1,0 +1,71 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {...}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header {
+        padding: 1rem;
+    }
+
+    .header img {
+        width: 65%;
+    }
+
+    .header_nav a {
+        padding: .5em 1em;
+        border: solid 1px;
+        text-decoration: none;
+        transition: ease .8s;
+    }
+
+    .btn {
+        padding: 1rem 3.3rem;
+    }
+
+    .container {
+        max-width: 60rem;
+    }
+
+    .heroBanner {
+        gap: 0;
+    }
+
+    .hero_title {
+        font-size: 2.8rem;
+    }
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        max-width: 90rem;
+    }
+
+    .curso_card p {
+        font-size: 1.4rem;
+    }
+
+    .escola p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+    
+    .escola img {
+        width: 45%;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {
+    .container {
+        max-width: 110rem;
+    }
+}
