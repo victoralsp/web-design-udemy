@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Introdução</legend>
+            <label for="">Email</label>
+            <input type="email" name="email" required>
+            <br><br>
+            Você possui filhos?
+            <br>
+            <label>
+                <input type="radio" name="possui-filhos">Sim
+            </label>
+            <label>
+                <input type="radio" name="possui-filhos">Não 
+            </label>
+            <br>
+            <label for="">Quantidade de filhos</label> 
+            <br>
+            <input type="number" id="filhos" min="0">
+            <br><br>
+            <input type="date">
+            <br><br><br>
+            <br><br>
+            Possui atividade extra?
+            <label>            
+                <input type="radio" name="atvExtra" value="s">Sim
+            </label>
+            <label>            
+                <input type="radio" name="atvExtra" value="n">Não
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            <label><input type="checkbox" name="interesse" value="html">Html</label>
+            <label><input type="checkbox"  name="interesse" value="css">Css</label>
+            <label><input type="checkbox"  name="interesse" value="javascript">Javascript</label>
+            <label><input type="checkbox"  name="interesse" value="python">Python</label>
+            <label><input type="checkbox"  name="interesse" value="java">Java</label>
+<br><br><br><br>
+            <label>Escolha uma linguagem
+                <br>
+                <select name="linguagem" required>
+                    <option value="">Selecione</option>
+                    <optgroup label="Front-end">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">Javascript</option>
+                    </optgroup>
+
+                    <optgroup label="Back-End">
+                    <option value="java">Java</option>
+                    <option value="python">Python</option>
+                    </optgroup>
+                </select>
+
+                <input type="text" list="lenguageList">
+                <datalist id="lenguageList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Javascript">
+                    <option value="Java">
+                    <option value="Python">
+                    <option value="PHP">
+                </datalist>
+
+            </label>
+        </fieldset>
+<br><br><br>
+        <fieldset>
+            <label>Estado:</label>
+            <input type="text" list="estados-lista">
+            <datalist id="estados-lista">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Minas Gerais">
+                <option value="Rio Grande do Sul">
+                <option value="Laranja azeda">
+
+            </datalist>
+        </fieldset>
+
+
+        <br><br><br>
+        <input type="submit" value="Mandar">
+    </form>
+</body>
+</html>

@@ -21,7 +21,7 @@ form {
     background-color: rgb(21, 46, 78);
     color: #e4e4e4;
     border-radius: 15px;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.733), 0px 0px 10px rgba(255, 255, 255, 0.555);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.541), 0px 0px 10px rgba(255, 255, 255, 0.411);
     padding: 1.5em 2em;
 }
 
@@ -45,13 +45,40 @@ input {
     font-size: .9em;
 }
 
+.actions {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.btn-login2 {
+    cursor: pointer;
+}
+
+.btn-logar {
+    margin-left: .5em;
+    flex: 1;
+    background-color: #f1f1f1;
+    border: 1px solid #dfdfdf;
+    color: rgb(21, 46, 78);
+}
+
+.btn--reset {
+    background-color: rgb(21, 46, 78);
+    color: #dfdfdf;
+    padding: 8px 25px;
+    border: 1px solid #dfdfdf;
+}
+
 .btn-login {
     cursor: pointer;
     background-color: rgb(21, 46, 78);
-    border: 1px solid #f1f1f1;
+    border: 1px solid #dfdfdf;
     color: #f1f1f1;
     margin-top: .8em;
     border-radius: 20px;
+    width: fit-content;
+    margin-left: auto;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.425);
 }
 
 legend {
