@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <section class="section-form">
-        <h1>Login</h1>
+        <h1>Cadastre-se</h1>
         <fieldset>
             <label for="user">Usuário</label>
                 <input type="text" id="user" required>
+                <label for="email">Email</label>
+                <input type="email" id="email">
             <label for="pass">Senha</label>
                 <input type="password" id="pass" required>
-            <div class="btn-register-forget">
+            <div class="btn-register-login">
                 <div class="btn-register">
-                    <input type="submit" value="Login" class="btn-login">
-                    <a href="cadastro.html" class="register">Cadastre-se</a>
+                    <input type="submit" value="Cadastre-se" class="btn-login">
                 </div>
-                <a href="#" class="forget">Esqueci minha senha</a>
+                <div class="paragraph-href">
+                    <p>Já possui cadastro?</p>
+                    <a href="index.html">Faça login</a>
+                </div>
             </div>
         </fieldset>
     </section>
