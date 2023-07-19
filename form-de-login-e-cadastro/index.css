@@ -84,6 +84,10 @@ input:focus {
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.24);
 }
 
+.btn-login:focus {
+    padding: 0;
+}
+
 .register {
     text-transform: uppercase;
     text-decoration: none;
