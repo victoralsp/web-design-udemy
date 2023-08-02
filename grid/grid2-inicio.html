@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .gridContainer {
+            width: 100vw;
+            height: 100vh;
+            background: #ccc;
+        }
+
+        .gridItem {
+            background-color: orange;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+
+        .gridContainer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 20px repeat(4, 50px);
+            gap: 1em;
+            grid-template-areas: 
+            "home home home"
+            "esquerda1 meio direita1"
+            "esquerda2 meio direita2"
+            "esquerda2 meio direita3"
+            /* "esquerda2 meio meio direita3"; */
+        }
+
+        .home {
+            grid-area: home;
+        }
+        .esquerda1 {
+            grid-area: esquerda1;
+        }
+        .esquerda2 {
+            grid-area: esquerda2;
+        }
+        .meio {
+            grid-area: meio;
+        }
+        .direita1 {
+            grid-area: direita1;
+        }
+        .direita2 {
+            grid-area: direita2;
+        }
+        .direita3 {
+            grid-area: direita3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gridContainer">
+        <div class="home gridItem">home</div>
+        <div class="esquerda1 gridItem">esquerda1</div>
+        <div class="esquerda2 gridItem">esquerda2</div>
+        <div class="meio gridItem">meio</div>
+        <div class="direita1 gridItem">direita1</div>
+        <div class="direita2 gridItem">direita2</div>
+        <div class="direita3 gridItem">direita3</div>
+    </div>
+</body>
+
+</html>
