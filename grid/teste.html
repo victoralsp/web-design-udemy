@@ -12,37 +12,44 @@
             height: 100vh;
             margin: 0;
         }
-        .green {
-            background-color: green;
-            grid-row: 1 / -1;
-        }
-        .red {
-            background-color: red;
-        }
-        .orange {
-            background-color: orange;
-        }
 
+        .gridItem {
+            background-color: green;
+        }
         section {
+            display: grid;
             grid-template-columns: repeat(4, 1fr);
             grid-template-rows: repeat(3, 100px);
-            gap: 1em;
+            gap: 10px;
             width: 80%;
         }
-
-    
+ 
+        .green {
+            grid-row: 1 / 4;
+        }
+        .row {
+            grid-column: 2 / 4;
+        }
+        .column {
+            grid-row: 2 / -1;
+            grid-column: 4;
+        }
     </style>
 </head>
 <body>
     <section>
-        <div class="green">green</div>
-        <div class="green">green</div>
-        <div class="red">red</div>
-        <div class="orange">orange</div>
-        <div class="red">red</div>
-        <div class="green">green</div>
-        <div class="red">red</div>
-        <div class="orange">orange</div>
+        <div class="gridItem green"></div>
+        <div class="gridItem row"></div>
+        <div class="gridItem column"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
+        <div class="gridItem"></div>
     </section>
 </body>
 </html>
