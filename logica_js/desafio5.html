@@ -19,10 +19,10 @@
             var resultado = (n1 + n2) / 2;
             // alert(resultado > 5);
 
-            if(resultado > 5 && n1 > 0 && n2 > 0){
-                alert("Aprovado! :)");
-            } else {
+            if (n1 === 0 || n2 === 0 || resultado <= 5){
                 alert("Reprovado! :(");
+            } else {
+                alert("Aprovado! :)");
             }
         </script>
     </body>
