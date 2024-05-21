@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <ol id="rotina-estudos">
+    </ol>
+
+    <script>
+        const rotina = [
+            {materia: "Algoritmos", horario: "19:00"},
+            {materia: "Analise e modelagem", horario: "19:00"},
+            {materia: "Lógica e matematica", horario: "19:00"}
+        ]
+
+        const rotinaEstudos = document.getElementById("rotina-estudos")
+
+        for (let i = 0; i < rotina.length; i++) {
+            rotinaEstudos.innerHTML += "<li>" + rotina[i].materia + ": " + rotina[i].horario + "</li>"
+        }
+    </script>
+</body>
+</html>

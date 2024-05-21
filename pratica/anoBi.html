@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<p id="para"></p>
+
+
+
+    <script>
+        // Crie uma função que retorne se o ano é bissexto ou não
+
+        function anoBissexto(ano) {
+            if (ano % 4 === 0 && ano % 100 !== 0 || ano % 400 == 0) {
+                alert("Ano bissexto")
+            } else { 
+                alert("Não é um ano bissexto") 
+            }
+        }
+
+        const para = document.getElementById("para").innerHTML = anoBissexto(2096)
+    
+    </script>
+</body> 
+</html>
