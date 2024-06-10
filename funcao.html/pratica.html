@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Função que mostra o dobro de um número </h1>
+    <label>Número que será dobrado
+        <input type="number" id="num">
+    </label>
+    <button onclick="dobrarNumAlert()">Dobrar</button>
+    <button onclick="dobrarNumOutput()">Dobrar</button>
+    <output id="output"></output>
+
+
+    <script>
+        const num = document.getElementById("num")
+        const output = document.getElementById("output")
+
+
+        function dobrarNumAlert(num) {
+            
+            let num = parseFloat(num.value)
+            let mensagem = dobrarNum(num)
+            alert(`"O valor dobrado é ${num}`)
+        }
+
+        function dobrarNum(num) {
+            let equacao = num * 2
+            return equacao
+        }
+    </script>
+</body>
+</html>

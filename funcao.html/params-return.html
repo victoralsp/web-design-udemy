@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular área da circunferencia</title>
+</head>
+<body>
+    
+    <h1>área da circunferencia</h1>
+
+    <label>Raio
+        <input type="number" id="raio">
+    </label>  
+    <br>
+    <button onclick="mostrarAreaDoPromptAlert()">Calcular do prompt mostrar alert</button> <br>
+    <button onclick="mostrarAreaInputAlert()">Calcular do input mostrar alert</button>  
+    <br>
+    <button onclick="mostrarAreaPromptOutput()">Calcular do prompt mostrar out</button> <br> 
+    <button onclick="mostrarAreaInputOutput()">Calcular do input mostrar out</button>  
+    <br>
+    <output id="resultado"></output>
+
+    <script>
+        const raio = document.getElementById("raio")
+        const output = document.getElementById("output")
+
+        function mostrarAreaDoPromptAlert() {
+            let raio = parseFloat(prompt("Digite o raio: "))
+            let mensagem = mostrarArea(raio)
+            alert(mensagem)
+        }
+        function mostrarAreaInputAlert() {
+            let raioInput = parseFloat(raio.value)
+            let mensagem = mostrarArea(raioInput)
+            alert(mensagem)
+        }
+
+        function mostrarAreaPromptOutput() {
+            let raio = parseFloat(prompt("Digite o raio: "))
+            let mensagem = mostrarArea(raio)
+            resultado.innerHTML = mensagem
+        }
+
+        function mostrarAreaInputOutput() {
+            let raioInput = parseFloat(raio.value)
+            let mensagem = mostrarArea(raioInput)
+            resultado.innerHTML = mensagem
+        }
+
+
+        function mostrarArea(raio) {
+            let area = Math.PI * (raio * raio)
+            return `A área da circunferencia de raio ${raio} é de: ${area.toFixed(2)}`
+        }
+    </script>
+</body>
+</html>
