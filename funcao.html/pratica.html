@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Função que mostra o dobro de um número</h1>
+    <label>Número que será dobrado
+        <input type="number" id="num">
+    </label>
+    <button onclick="dobrarNumAlert()">Dobrar</button>
+    <button onclick="dobrarNumOutput()">Dobrar</button>
+    <button onclick="dobrarAlertOutput()">Dobrar</button>
+    <button onclick="dobrarAlertAlert()">Dobrar</button>
+    <br>
+    <output id="output"></output>
+    <script>
+        const num = document.getElementById("num")
+        const output = document.getElementById("output")
+        
+        function dobrarNumAlert() {
+            let numInput = parseFloat(num.value)
+            if (isNaN(numInput)) {
+                alert("Digite um número válido.") 
+            } else {
+                let resultado = dobrarNum(numInput)
+            alert(`O dobro do numéro ${numInput} é: ${resultado}`)
+            }
+        }
+        function dobrarNumOutput() {
+            let numInput = parseFloat(num.value)
+            if (isNaN(numInput)) {
+                alert("Digite um número válido.") 
+            } else {
+                let resultado = dobrarNum(numInput)
+             output.innerHTML = `O dobro do numéro ${numInput} é: ${resultado}`
+            }
+        }
+        function dobrarAlertOutput() {
+            let numInput = parseFloat(prompt("Digite um número: "))
+            if (isNaN(numInput)) {
+                alert("Digite um número válido.") 
+            } else {
+                let resultado = dobrarNum(numInput)
+                output.innerHTML = `O dobro do numéro ${numInput} é: ${resultado}`
+            }
+        }
+        function dobrarAlertAlert() {
+            let numInput = parseFloat(prompt("Digite um número: "))
+            if (isNaN(numInput)) {
+                alert("Digite um número válido.") 
+            } else {
+                let resultado = dobrarNum(numInput)
+                alert(`O dobro do numéro ${numInput} é: ${resultado}`)
+            }
+        }
+        function dobrarNum(num) {
+            let equacao = num * 2
+            return equacao
+        }
+    </script>
+</body>
+</html>
