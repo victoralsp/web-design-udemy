@@ -44,9 +44,9 @@ function calcMedia() {
         errosInput.innerHTML = 'Verifique se o nome e as notas estão preenchidos corretamente.'
     } else {
         if (media < 5) {
-        resultados.push(`A média do aluno ${aluno} é ${media}, ele está reprovado.`)
+        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está reprovado(a).`)
     } else {
-        resultados.push(`A média do aluno ${aluno} é ${media}, ele está aprovado.`)
+        resultados.push(`A média do(a) aluno(a) ${aluno} é ${media}, ele(a) está aprovado(a).`)
     }
     }
     localStorage.setItem('resultados', JSON.stringify(resultados));
@@ -62,11 +62,10 @@ function mostrarResultados() {
     resultado.innerHTML = html
 }
 
-
-// AJUSTAR
 function limparArray() {
-    resultado.innerHTML = ''
+    resultados = []; 
     localStorage.setItem('resultados', JSON.stringify(resultados)); 
+    mostrarResultados();
 }
 
 function limparResultados() {
