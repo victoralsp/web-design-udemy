@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno"> <br>
+    <input type="text" id="notaPortugues" placeholder="Digite a nota de português"> <br>
+    <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática"> <br>
+    <input type="text" id="notaRedacao" placeholder="Digite a nota da redação"> <br>
+    <button onclick="calcMedia()">Calcular</button>
+    <br>
+    <output id="output"></output>
+
+<script>
+    // Teste de junção de arrays com funcões
+    // Fazer um algoritmo que pegue a nota do aluno atraves de uma array, e calcule a média usando uma função
+    const output = document.getElementById("output");
+    const nomeAluno = document.getElementById("nomeAluno")
+    const notaPortugues = document.getElementById("notaPortugues")
+    const notaMatematica = document.getElementById("notaMatematica")
+    const notaRedacao = document.getElementById("notaRedacao")
+
+        function calcMedia() {
+            let aluno = nomeAluno.value
+            let notaPortuguesInput = parseFloat(notaPortugues.value)
+            let notaMatematicaInput = parseFloat(notaMatematica.value)
+            let notaRedacaoInput = parseFloat(notaRedacao.value)
+
+            let media = (notaPortuguesInput + notaMatematicaInput + notaRedacaoInput) / 3
+            output.innerHTML = `A média do aluno ${aluno} é ${media}`
+        }
+</script>
+</body>
+</html>
