@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno"> <br>
-    <input type="text" id="notaPortugues" placeholder="Digite a nota de português"> <br>
-    <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática"> <br>
-    <input type="text" id="notaRedacao" placeholder="Digite a nota da redação"> <br>
+    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off"> <br>
+    <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off"> <br>
+    <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off"> <br>
+    <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off"> <br>
     <button onclick="calcMedia()">Calcular</button>
     <br>
     <output id="resultado"></output>
-    <button onclick="limparArray()">Limpar</button>
+    <button onclick="limparArray()">Limpar lista de alunos e notas</button>
     <p id="errosInput"></p>
 
 <script>
