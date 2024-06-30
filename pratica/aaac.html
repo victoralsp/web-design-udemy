@@ -22,7 +22,14 @@ const nomeAluno = document.getElementById("nomeAluno")
 const notaPortugues = document.getElementById("notaPortugues")
 const notaMatematica = document.getElementById("notaMatematica")
 const notaRedacao = document.getElementById("notaRedacao")
-const resultados = []
+let resultados = []
+
+document.addEventListener('DOMContentLoaded', function() {
+    if (localStorage.getItem('resultados')) {
+        resultados = JSON.parse(localStorage.getItem('resultados'))
+        mostrarResultados()
+    }
+});
 
 function calcMedia() {
     let aluno = nomeAluno.value
@@ -41,6 +48,7 @@ function calcMedia() {
         resultados.push(`A média do aluno ${aluno} é ${media}, ele está aprovado.`)
     }
     }
+    localStorage.setItem('resultados', JSON.stringify(resultados));
     mostrarResultados()
     limparResultados()
 }
@@ -52,6 +60,7 @@ function mostrarResultados() {
     })
     resultado.innerHTML = html
 }
+
 
 function limparResultados() {
     nomeAluno.value = ""
