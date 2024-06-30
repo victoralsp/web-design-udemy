@@ -13,6 +13,7 @@
     <button onclick="calcMedia()">Calcular</button>
     <br>
     <output id="resultado"></output>
+    <button onclick="limparArray()">Limpar</button>
     <p id="errosInput"></p>
 
 <script>
@@ -61,6 +62,12 @@ function mostrarResultados() {
     resultado.innerHTML = html
 }
 
+
+// AJUSTAR
+function limparArray() {
+    resultado.innerHTML = ''
+    localStorage.setItem('resultados', JSON.stringify(resultados)); 
+}
 
 function limparResultados() {
     nomeAluno.value = ""
