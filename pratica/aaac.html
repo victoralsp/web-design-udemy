@@ -32,8 +32,8 @@ function calcMedia() {
 
     let media = (notaPortuguesInput + notaMatematicaInput + notaRedacaoInput) / 3
     media = media.toFixed(2)
-    if (isNaN(notaPortuguesInput) || isNaN(notaMatematicaInput) || isNaN(notaRedacaoInput)) {
-        errosInput.innerHTML = 'Digite notas válidas.'
+    if (aluno == '' || !isNaN(aluno) || isNaN(notaPortuguesInput) || isNaN(notaMatematicaInput) || isNaN(notaRedacaoInput)) {
+        errosInput.innerHTML = 'Verifique se o nome e as notas estão preenchidos corretamente.'
     } else {
         if (media < 5) {
         resultados.push(`A média do aluno ${aluno} é ${media}, ele está reprovado.`)
