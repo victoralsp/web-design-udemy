@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article>
+        <section id="sectionCalculo" class="secFlex">
+            <h1>Calcular média</h1>
+            <label for="nomeAluno">Nome do aluno:</label>
+            <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off">
+            <label for="notaPortugues">Nota de português:</label>
+            <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off">
+            <label for="nomeAluno">Nota de matemática:</label>
+            <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off">
+            <label for="notaRedacao">Nota da redação:</label>
+            <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off">
+            <button onclick="calcMedia()">Calcular</button>
+            <p id="errosInput"></p>
+        </section>
+
+        <section id="sectionResultado" class="secFlex">
+            <output id="resultado"></output>
+            <button onclick="limparArray()">Limpar lista de alunos e notas</button>
+        </section>
+</article>
+    <script src="index.js"></script>
+</body>
+</html>

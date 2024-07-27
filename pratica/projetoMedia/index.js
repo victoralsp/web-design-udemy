@@ -1,23 +1,3 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="text" id="nomeAluno" placeholder="Digite o nome do aluno" autocomplete="off"> <br>
-    <input type="text" id="notaPortugues" placeholder="Digite a nota de português" autocomplete="off"> <br>
-    <input type="text" id="notaMatematica" placeholder="Digite a nota de matemática" autocomplete="off"> <br>
-    <input type="text" id="notaRedacao" placeholder="Digite a nota da redação" autocomplete="off"> <br>
-    <button onclick="calcMedia()">Calcular</button>
-    <br>
-    <output id="resultado"></output>
-    <button onclick="limparArray()">Limpar lista de alunos e notas</button>
-    <p id="errosInput"></p>
-
-<script>
-
 const resultado = document.getElementById("resultado")
 const nomeAluno = document.getElementById("nomeAluno")
 const notaPortugues = document.getElementById("notaPortugues")
@@ -74,6 +54,3 @@ function limparResultados() {
     notaMatematica.value = ""
     notaRedacao.value = ""
 }
-</script>
-</body>
-</html>
