@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function calcMedia() {
+            console.log(arguments)
+            let resultado = 0
+            for (let i = 0; i < arguments.length; i++) {
+                if (arguments === null) {
+                    return 0
+                } else if (typeof arguments[i] == 'string') {
+                    throw Error("Error")
+                }
+                resultado += arguments[i] / arguments.length
+            }
+            return resultado
+        }
+
+        console.log(calcMedia())
+        console.log(calcMedia(2, 6))
+        console.log(calcMedia(2, 6, 1, 1, 2, 6))
+        console.log(calcMedia("2", "6", 8))
+
+    </script>
+</body>
+</html>

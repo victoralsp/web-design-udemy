@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form> -->
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <button onclick="cadastrar()">Enviar</button>
+        <output id="output"></output>
+    <!-- </form> -->
+</body>
+    <script>
+        const email = document.getElementById('email')
+        const output = document.getElementById('output')
+
+        function cadastrar() {
+            let emailUsuer = email.value
+            output.innerHTML = `O email ${emailUsuer} foi cadastrado com sucesso.`
+        }
+    </script>
+</html>
