@@ -8,18 +8,19 @@
 <body>
     <!-- <form> -->
         <label for="email">Email</label>
-        <input type="email" id="email">
-        <button onclick="cadastrar()">Enviar</button>
+        <input type="email" id="email" disabled onblur="disableEmail()">
+        <button onclick="editarEmail()">Editar</button>
         <output id="output"></output>
     <!-- </form> -->
 </body>
     <script>
         const email = document.getElementById('email')
-        const output = document.getElementById('output')
-
-        function cadastrar() {
-            let emailUsuer = email.value
-            output.innerHTML = `O email ${emailUsuer} foi cadastrado com sucesso.`
+        function editarEmail() {
+            email.disabled = false
+            email.focus()
         }
-    </script>
+        function disableEmail() {
+            email.disabled = true
+        }
+        </script>
 </html>
