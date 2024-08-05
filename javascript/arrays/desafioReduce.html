@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // deixar apenas um numero de cada na array usando reduce
+        const numeros = [1, 3, 4, 1, 4, 5, 3, 5, 8, 9]
+        const numUnicos = numeros.reduce(function(numUnicos, numAtual){
+            if (numUnicos.indexOf(numAtual) < 0) {
+                numUnicos.push(numAtual)
+            }
+            return numUnicos
+        }, [])
+        console.log(numUnicos)
+        </script>
+</body>
+</html>
