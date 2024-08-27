@@ -11,16 +11,26 @@
     <script>
         // criar duas funções sum() e avarege() 
         
-        function sum(arguments) {
-            console.log(arguments)
-            let soma = 0
+        function sum() {
+            let somar = 0
             for (let i = 0; i < arguments.length; i++) {
-                soma += arguments[i]
+                somar += arguments[i]
             }
-            return soma
+            return somar
         }
+        console.log(sum(5, 8, 6, 5, 10))
 
-        console.log(sum(5, 8, 6, 5))
+        
+        function avarege() {
+            let total = 0
+            for (let i = 0; i < arguments.length; i++) {
+                total += arguments[i]
+                media = total / arguments.length
+            }
+            return media 
+        }
+        console.log(avarege(5, 8, 6, 5, 10))
+
     </script>
 </body>
 </html>
